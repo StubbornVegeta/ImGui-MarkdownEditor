@@ -137,4 +137,5 @@ CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.o: \
  /home/vegeta/Desktop/ImGuiApp/Markdown/backends/imgui_impl_glfw.h \
  /home/vegeta/Desktop/ImGuiApp/Markdown/backends/imgui_impl_opengl3.h \
  /home/vegeta/Desktop/ImGuiApp/Markdown/include/LoadImage.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/include/IconsFontAwesome5.h
+ /home/vegeta/Desktop/ImGuiApp/Markdown/include/IconsFontAwesome5.h \
+ /home/vegeta/Desktop/ImGuiApp/Markdown/backends/imgui_impl_opengl3_loader.h

@@ -35,6 +35,16 @@ API BREAKING CHANGES
 #include "imgui_impl_opengl3.h"
 #include "imgui.h"
 #include "LoadImage.h"
+//#define STB_IMAGE_IMPLEMENTATION
+//#include "stb_image.h"
+
+struct ListNode {
+    GLuint value;
+    ListNode* next;
+    ListNode() : value(0), next(nullptr) {}
+    ListNode(GLuint val_, ListNode* next_)
+        : value(val_), next(next_) {}
+};
 
 namespace ImGui {
     //-----------------------------------------------------------------------------
@@ -52,6 +62,7 @@ namespace ImGui {
         int                     linkLength;
         void*                   userData;
         bool                    isImage;                            // true if '!' is detected in front of the link syntax
+        //int                     ImageNumber = 0;
     };
 
     struct MarkdownTooltipCallbackData                              // for tooltips
@@ -63,8 +74,8 @@ namespace ImGui {
     struct MarkdownImageData {
         bool                    isValid = false;                    // if true, will draw the image
         bool                    useLinkCallback = false;            // if true, linkCallback will be called when image is clicked
-        ImTextureID             user_texture_id = 0;                // see ImGui::Image
-        //GLuint           user_texture_id = 0;                // see ImGui::Image
+        //ImTextureID             user_texture_id = 0;                // see ImGui::Image
+        GLuint           user_texture_id = 0;                // see ImGui::Image
 
         ImVec2                  size = ImVec2( 100.0f, 100.0f );    // see ImGui::Image
         ImVec2                  uv0 = ImVec2( 0, 0 );               // see ImGui::Image
@@ -132,7 +143,7 @@ namespace ImGui {
     // External interface
     //-----------------------------------------------------------------------------
 
-    inline void Markdown( const char* markdown_, size_t markdownLength_, const MarkdownConfig& mdConfig_ );
+    inline ListNode* Markdown( const char* markdown_, size_t markdownLength_, const MarkdownConfig& mdConfig_ );
 
     //-----------------------------------------------------------------------------
     // Internals
@@ -313,278 +324,7 @@ namespace ImGui {
     }
     
     // render markdown
-    inline void Markdown( const char* markdown_, size_t markdownLength_, const MarkdownConfig& mdConfig_ ) {
-        static const char* linkHoverStart = NULL; // we need to preserve status of link hovering between frames
-        ImGuiStyle& style = ImGui::GetStyle();
-        Line        line;
-        Link        link;
-        Emphasis    em;
-        TextRegion  textRegion;
-
-        char c = 0;
-        for( int i=0; i < (int)markdownLength_; ++i ) {
-            c = markdown_[i];               // get the character at index
-            if( c == 0 ) { break; }         // shouldn't happen but don't go beyond 0.
-
-            // If we're at the beginning of the line, count any spaces
-            if( line.isLeadingSpace ) {
-                if( c == ' ' ) {
-                    ++line.leadSpaceCount;
-                    continue;
-                }
-                else {
-                    line.isLeadingSpace = false;
-                    line.lastRenderPosition = i - 1;
-                    if(( c == '*' ) && ( line.leadSpaceCount >= 2 ))
-                    {
-                        if( ( (int)markdownLength_ > i + 1 ) && ( markdown_[ i + 1 ] == ' ' ) )    // space after '*'
-                        {
-                            line.isUnorderedListStart = true;
-                            ++i;
-                            ++line.lastRenderPosition;
-                        }
-                        // carry on processing as could be emphasis
-                    }
-                    else if( c == '#' ) {
-                        line.headingCount++;
-                        bool bContinueChecking = true;
-                        int j = i;
-                        while( ++j < (int)markdownLength_ && bContinueChecking ) {
-                            c = markdown_[j];
-                            switch( c ) {
-                            case '#':
-                                line.headingCount++;
-                                break;
-                            case ' ':
-                                line.lastRenderPosition = j - 1;
-                                i = j;
-                                line.isHeading = true;
-                                bContinueChecking = false;
-                                break;
-                            default:
-                                line.isHeading = false;
-                                bContinueChecking = false;
-                                break;
-                            }
-                        }
-                        if( line.isHeading ) {
-                            // reset emphasis status, we do not support emphasis around headers for now
-                            em = Emphasis();
-                            continue;
-                        }
-                    }
-                }
-            }
-
-            // Test to see if we have a link
-            switch( link.state )
-            {
-            case Link::NO_LINK:
-                if( c == '[' && !line.isHeading ) // we do not support headings with links for now
-                {
-                    link.state = Link::HAS_SQUARE_BRACKET_OPEN;
-                    link.text.start = i + 1;
-                    if( i > 0 && markdown_[i - 1] == '!' )
-                    {
-                        link.isImage = true;
-                    }
-                }
-                break;
-            case Link::HAS_SQUARE_BRACKET_OPEN:
-                if( c == ']' ) {
-                    link.state = Link::HAS_SQUARE_BRACKETS;
-                    link.text.stop = i;
-                }
-                break;
-            case Link::HAS_SQUARE_BRACKETS:
-                if( c == '(' ) {
-                    link.state = Link::HAS_SQUARE_BRACKETS_ROUND_BRACKET_OPEN;
-                    link.url.start = i + 1;
-                    link.num_brackets_open = 1;
-                }
-                break;
-            case Link::HAS_SQUARE_BRACKETS_ROUND_BRACKET_OPEN:
-                if( c == '(' ) {
-                    ++link.num_brackets_open;
-                }
-                else if( c == ')' ) {
-                    --link.num_brackets_open;
-                }
-                if( link.num_brackets_open == 0 ) {
-                    // reset emphasis status, we do not support emphasis around links for now
-                    em = Emphasis();
-                    // render previous line content
-                    line.lineEnd = link.text.start - ( link.isImage ? 2 : 1 );
-                    RenderLine( markdown_, line, textRegion, mdConfig_ );
-                    line.leadSpaceCount = 0;
-                    link.url.stop = i;
-                    line.isUnorderedListStart = false;    // the following text shouldn't have bullets
-                    ImGui::SameLine( 0.0f, 0.0f );
-                    if( link.isImage )   // it's an image, render it.
-                    {
-                        bool drawnImage = false;
-                        bool useLinkCallback = false;
-                        if( mdConfig_.imageCallback ) {
-                            //MarkdownImageData imageData = mdConfig_.imageCallback( { markdown_ + link.text.start, link.text.size(), markdown_ + link.url.start, link.url.size(), mdConfig_.userData, true } );
-
-                            //vegeta
-                            MarkdownImageData imageData = mdConfig_.imageCallback( { std::string(markdown_).substr(link.text.start, link.text.size()).c_str(), link.text.size(), std::string(markdown_).substr(link.url.start, link.url.size()).c_str(), link.url.size(), mdConfig_.userData, true } );
-                            //static bool ret;
-                            useLinkCallback = imageData.useLinkCallback;
-
-                            if( imageData.isValid ) {
-                                ImGui::Image(imageData.user_texture_id, imageData.size, imageData.uv0, imageData.uv1, imageData.tint_col, imageData.border_col );
-                                drawnImage = true;
-                            }
-                        }
-                        if( !drawnImage ) {
-                            ImGui::Text( "( Image %.*s not loaded )", link.url.size(), markdown_ + link.url.start );
-                        }
-                        if( ImGui::IsItemHovered() ) {
-                            if( ImGui::IsMouseReleased( 0 ) && mdConfig_.linkCallback && useLinkCallback ) {
-                                mdConfig_.linkCallback( { markdown_ + link.text.start, link.text.size(), markdown_ + link.url.start, link.url.size(), mdConfig_.userData, true } );
-                            }
-                            if( link.text.size() > 0 && mdConfig_.tooltipCallback ) {
-                                mdConfig_.tooltipCallback( { { markdown_ + link.text.start, link.text.size(), markdown_ + link.url.start, link.url.size(), mdConfig_.userData, true }, mdConfig_.linkIcon } );
-                            }
-                        }
-                    }
-                    else                 // it's a link, render it.
-                    {
-                        textRegion.RenderLinkTextWrapped( markdown_ + link.text.start, markdown_ + link.text.start + link.text.size(), link, markdown_, mdConfig_, &linkHoverStart, false );
-                    }
-                    ImGui::SameLine( 0.0f, 0.0f );
-                    // reset the link by reinitializing it
-                    link = Link();
-                    line.lastRenderPosition = i;
-                    break;
-                }
-            }
-
-            // Test to see if we have emphasis styling
-            switch( em.state ) {
-            case Emphasis::NONE:
-                if( link.state == Link::NO_LINK && !line.isHeading ) {
-                    int next = i + 1;
-                    int prev = i - 1;
-                    if( ( c == '*' || c == '_' )
-                        && ( i == line.lineStart
-                            || markdown_[ prev ] == ' '
-                            || markdown_[ prev ] == '\t' ) // empasis must be preceded by whitespace or line start
-                        && (int)markdownLength_ > next // emphasis must precede non-whitespace
-                        && markdown_[ next ] != ' '
-                        && markdown_[ next ] != '\n'
-                        && markdown_[ next ] != '\t' )
-                    {
-                        em.state = Emphasis::LEFT;
-                        em.sym = c;
-                        em.text.start = i;
-                        line.emphasisCount = 1;
-                        continue;
-                    }
-                }
-                break;
-            case Emphasis::LEFT:
-                if( em.sym == c ) {
-                    ++line.emphasisCount;
-                    continue;
-                }
-                else {
-                    em.text.start = i;
-                    em.state = Emphasis::MIDDLE;
-                }
-                break;
-            case Emphasis::MIDDLE:
-                if( em.sym == c ) {
-                    em.state = Emphasis::RIGHT;
-                    em.text.stop = i;
-                   // pass through to case Emphasis::RIGHT
-                }
-                else {
-                    break;
-                }
-            case Emphasis::RIGHT:
-                if( em.sym == c ) {
-                    if( line.emphasisCount < 3 && ( i - em.text.stop + 1 == line.emphasisCount ) ) {
-                        // render text up to emphasis
-                        int lineEnd = em.text.start - line.emphasisCount;
-                        if( lineEnd > line.lineStart ) {
-                            line.lineEnd = lineEnd;
-                            RenderLine( markdown_, line, textRegion, mdConfig_ );
-                            ImGui::SameLine( 0.0f, 0.0f );
-                            line.isUnorderedListStart = false;
-                            line.leadSpaceCount = 0;
-                        }
-                        line.isEmphasis = true;
-                        line.lastRenderPosition = em.text.start - 1;
-                        line.lineStart = em.text.start;
-                        line.lineEnd = em.text.stop;
-                        RenderLine( markdown_, line, textRegion, mdConfig_ );
-                        ImGui::SameLine( 0.0f, 0.0f );
-                        line.isEmphasis = false;
-                        line.lastRenderPosition = i;
-                        em = Emphasis();
-                    }
-                    continue;
-                } 
-                else {
-                    em.state = Emphasis::NONE;
-                    // render text up to here
-                    int start = em.text.start - line.emphasisCount;
-                    if( start < line.lineStart ) {
-                        line.lineEnd = line.lineStart;
-                        line.lineStart = start;
-                        line.lastRenderPosition = start - 1;
-                        RenderLine(markdown_, line, textRegion, mdConfig_);
-                        line.lineStart          = line.lineEnd;
-                        line.lastRenderPosition = line.lineStart - 1;
-                    }
-                }
-                break;
-            }
-
-            // handle end of line (render)
-            if( c == '\n' ) {
-                // first check if the line is a horizontal rule
-                line.lineEnd = i;
-                if( em.state == Emphasis::MIDDLE && line.emphasisCount >=3 &&
-                    ( line.lineStart + line.emphasisCount ) == i ) {
-                    ImGui::Separator();
-                }
-                else {
-                    // render the line: multiline emphasis requires a complex implementation so not supporting
-                    RenderLine( markdown_, line, textRegion, mdConfig_ );
-                }
-
-                // reset the line and emphasis state
-                line = Line();
-                em = Emphasis();
-
-                line.lineStart = i + 1;
-                line.lastRenderPosition = i;
-
-                textRegion.ResetIndent();
-                
-                // reset the link
-                link = Link();
-            }
-        }
-
-        if( em.state == Emphasis::LEFT && line.emphasisCount >= 3 ) {
-            ImGui::Separator();
-        }
-        else {
-            // render any remaining text if last char wasn't 0
-            if( markdownLength_ && line.lineStart < (int)markdownLength_ && markdown_[ line.lineStart ] != 0 ) {
-                // handle both null terminated and non null terminated strings
-                line.lineEnd = (int)markdownLength_;
-                if( 0 == markdown_[ line.lineEnd - 1 ] ) {
-                    --line.lineEnd;
-                }
-                RenderLine( markdown_, line, textRegion, mdConfig_ );
-            }
-        }
-    }
+    inline ListNode* Markdown( const char* markdown_, size_t markdownLength_, const MarkdownConfig& mdConfig_ ); 
 
     inline bool TextRegion::RenderLinkText( const char* text_, const char* text_end_, const Link& link_,
         const char* markdown_, const MarkdownConfig& mdConfig_, const char** linkHoverStart_ ) {
@@ -738,6 +478,6 @@ void LoadFonts( float fontSize_ );
 
 void ExampleMarkdownFormatCallback( const ImGui::MarkdownFormatInfo& markdownFormatInfo_, bool start_ );
 
-void Markdown( const std::string& markdown_ );
+ListNode* Markdown( const std::string& markdown_ );
 
 void MarkdownExample();

@@ -37,6 +37,5 @@ bool LoadTextureFromFile(const char* filename, GLuint* out_texture, int* out_wid
     *out_texture = image_texture;
     *out_width = image_width;
     *out_height = image_height;
-
     return true;
 }

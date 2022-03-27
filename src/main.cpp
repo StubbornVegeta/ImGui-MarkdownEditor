@@ -23,6 +23,8 @@
 #pragma comment(lib, "legacy_stdio_definitions")
 #endif
 
+//extern ListNode* ImageListBak;
+
 static void glfw_error_callback(int error, const char* description)
 {
     fprintf(stderr, "Glfw Error %d: %s\n", error, description);
@@ -94,10 +96,11 @@ int main(int, char**)
 
 
     //io.Fonts->Clear();
-    io.Fonts->AddFontFromFileTTF("FiraCode-Bold.ttf", 16.0f, NULL);
-    ImFontConfig cfg;
-    cfg.MergeMode = true;
-    io.Fonts->AddFontFromFileTTF("/usr/share/fonts/wenquanyi/wqy-microhei/wqy-microhei.ttc", 16.0f, &cfg, io.Fonts->GetGlyphRangesChineseFull());
+    //io.Fonts->AddFontFromFileTTF("../FiraCode-Regular.ttf", 16.0f, NULL);
+    //ImFontConfig cfg;
+    //cfg.MergeMode = true;
+    //io.Fonts->AddFontFromFileTTF("/usr/share/fonts/wenquanyi/wqy-microhei/wqy-microhei.ttc", 16.0f, &cfg, io.Fonts->GetGlyphRangesChineseFull());
+    LoadFonts(16.0f);
     //io.Fonts->Build();
 
 
@@ -172,9 +175,7 @@ int main(int, char**)
         Funcs::MyInputTextMultiline("##MyStr", &my_str, ImVec2(-FLT_MIN, -ImGui::GetTextLineHeight()*FLT_MIN));
         ImGui::End();
 
-        //ImGui::Begin("Preview");
-        Markdown(my_str.Data);
-        //ImGui::End();
+        ListNode* ImageList = Markdown(my_str.Data);
 
         /*************************** CUSTOM END *************************/
 
@@ -186,6 +187,15 @@ int main(int, char**)
         glClearColor(clear_color.x * clear_color.w, clear_color.y * clear_color.w, clear_color.z * clear_color.w, clear_color.w);
         glClear(GL_COLOR_BUFFER_BIT);
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+
+        while(ImageList && ImageList->next) {
+            glDeleteTextures(1, &(ImageList->value));
+            ListNode* tmp = ImageList;
+            ImageList = ImageList->next;
+            delete tmp;
+        }
+        glDeleteTextures(1, &(ImageList->value));
+        delete ImageList;
 
         // Update and Render additional Platform Windows
         // (Platform functions may change the current OpenGL context, so we save/restore it to make it easier to paste this code elsewhere.
