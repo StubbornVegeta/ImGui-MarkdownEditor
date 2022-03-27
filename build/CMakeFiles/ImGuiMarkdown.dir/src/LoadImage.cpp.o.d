@@ -1,9 +1,9 @@
 CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.o: \
- /home/vegeta/Desktop/ImGuiApp/Markdown/src/LoadImage.cpp \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/src/LoadImage.cpp \
  /usr/include/stdc-predef.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/include/LoadImage.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/backends/imgui_impl_opengl3_loader.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/include/stb_image.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/include/LoadImage.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/backends/imgui_impl_opengl3_loader.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/include/stb_image.h \
  /usr/include/stdio.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \

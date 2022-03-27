@@ -1,8 +1,8 @@
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.o: \
- /home/vegeta/Desktop/ImGuiApp/Markdown/src/imgui_tables.cpp \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/src/imgui_tables.cpp \
  /usr/include/stdc-predef.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/include/imgui.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/include/imconfig.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/include/imgui.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/include/imconfig.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/float.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
@@ -13,7 +13,7 @@ CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.o: \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/include/imgui_internal.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/include/imgui_internal.h \
  /usr/include/stdio.h /usr/include/bits/types.h \
  /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
  /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
@@ -168,7 +168,7 @@ CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/amxbf16intrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/prfchwintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/keylockerintrin.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/include/imstb_textedit.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/include/imstb_textedit.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-uintn.h

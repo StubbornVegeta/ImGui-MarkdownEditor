@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vegeta/Desktop/ImGuiApp/Markdown
+CMAKE_SOURCE_DIR = /home/vegeta/Desktop/ImGui-MarkdownEditor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vegeta/Desktop/ImGuiApp/Markdown/build
+CMAKE_BINARY_DIR = /home/vegeta/Desktop/ImGui-MarkdownEditor/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ImGuiMarkdown.dir/depend.make
@@ -72,128 +72,128 @@ include CMakeFiles/ImGuiMarkdown.dir/flags.make
 CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.o: CMakeFiles/ImGuiMarkdown.dir/flags.make
 CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.o: CMakeFiles/ImGuiMarkdown.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vegeta/Desktop/ImGuiApp/Markdown/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.o -MF CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.o.d -o CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.o -c /home/vegeta/Desktop/ImGuiApp/Markdown/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vegeta/Desktop/ImGui-MarkdownEditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.o -MF CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.o.d -o CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.o -c /home/vegeta/Desktop/ImGui-MarkdownEditor/src/main.cpp
 
 CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vegeta/Desktop/ImGuiApp/Markdown/src/main.cpp > CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vegeta/Desktop/ImGui-MarkdownEditor/src/main.cpp > CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.i
 
 CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vegeta/Desktop/ImGuiApp/Markdown/src/main.cpp -o CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vegeta/Desktop/ImGui-MarkdownEditor/src/main.cpp -o CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.s
 
 CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.o: CMakeFiles/ImGuiMarkdown.dir/flags.make
 CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.o: ../src/LoadImage.cpp
 CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.o: CMakeFiles/ImGuiMarkdown.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vegeta/Desktop/ImGuiApp/Markdown/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.o -MF CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.o.d -o CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.o -c /home/vegeta/Desktop/ImGuiApp/Markdown/src/LoadImage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vegeta/Desktop/ImGui-MarkdownEditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.o -MF CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.o.d -o CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.o -c /home/vegeta/Desktop/ImGui-MarkdownEditor/src/LoadImage.cpp
 
 CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vegeta/Desktop/ImGuiApp/Markdown/src/LoadImage.cpp > CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vegeta/Desktop/ImGui-MarkdownEditor/src/LoadImage.cpp > CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.i
 
 CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vegeta/Desktop/ImGuiApp/Markdown/src/LoadImage.cpp -o CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vegeta/Desktop/ImGui-MarkdownEditor/src/LoadImage.cpp -o CMakeFiles/ImGuiMarkdown.dir/src/LoadImage.cpp.s
 
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.o: CMakeFiles/ImGuiMarkdown.dir/flags.make
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.o: ../src/imgui_markdown.cpp
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.o: CMakeFiles/ImGuiMarkdown.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vegeta/Desktop/ImGuiApp/Markdown/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.o -MF CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.o.d -o CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.o -c /home/vegeta/Desktop/ImGuiApp/Markdown/src/imgui_markdown.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vegeta/Desktop/ImGui-MarkdownEditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.o -MF CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.o.d -o CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.o -c /home/vegeta/Desktop/ImGui-MarkdownEditor/src/imgui_markdown.cpp
 
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vegeta/Desktop/ImGuiApp/Markdown/src/imgui_markdown.cpp > CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vegeta/Desktop/ImGui-MarkdownEditor/src/imgui_markdown.cpp > CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.i
 
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vegeta/Desktop/ImGuiApp/Markdown/src/imgui_markdown.cpp -o CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vegeta/Desktop/ImGui-MarkdownEditor/src/imgui_markdown.cpp -o CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.s
 
 CMakeFiles/ImGuiMarkdown.dir/src/imgui.cpp.o: CMakeFiles/ImGuiMarkdown.dir/flags.make
 CMakeFiles/ImGuiMarkdown.dir/src/imgui.cpp.o: ../src/imgui.cpp
 CMakeFiles/ImGuiMarkdown.dir/src/imgui.cpp.o: CMakeFiles/ImGuiMarkdown.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vegeta/Desktop/ImGuiApp/Markdown/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ImGuiMarkdown.dir/src/imgui.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImGuiMarkdown.dir/src/imgui.cpp.o -MF CMakeFiles/ImGuiMarkdown.dir/src/imgui.cpp.o.d -o CMakeFiles/ImGuiMarkdown.dir/src/imgui.cpp.o -c /home/vegeta/Desktop/ImGuiApp/Markdown/src/imgui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vegeta/Desktop/ImGui-MarkdownEditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ImGuiMarkdown.dir/src/imgui.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImGuiMarkdown.dir/src/imgui.cpp.o -MF CMakeFiles/ImGuiMarkdown.dir/src/imgui.cpp.o.d -o CMakeFiles/ImGuiMarkdown.dir/src/imgui.cpp.o -c /home/vegeta/Desktop/ImGui-MarkdownEditor/src/imgui.cpp
 
 CMakeFiles/ImGuiMarkdown.dir/src/imgui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImGuiMarkdown.dir/src/imgui.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vegeta/Desktop/ImGuiApp/Markdown/src/imgui.cpp > CMakeFiles/ImGuiMarkdown.dir/src/imgui.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vegeta/Desktop/ImGui-MarkdownEditor/src/imgui.cpp > CMakeFiles/ImGuiMarkdown.dir/src/imgui.cpp.i
 
 CMakeFiles/ImGuiMarkdown.dir/src/imgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImGuiMarkdown.dir/src/imgui.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vegeta/Desktop/ImGuiApp/Markdown/src/imgui.cpp -o CMakeFiles/ImGuiMarkdown.dir/src/imgui.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vegeta/Desktop/ImGui-MarkdownEditor/src/imgui.cpp -o CMakeFiles/ImGuiMarkdown.dir/src/imgui.cpp.s
 
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_draw.cpp.o: CMakeFiles/ImGuiMarkdown.dir/flags.make
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_draw.cpp.o: ../src/imgui_draw.cpp
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_draw.cpp.o: CMakeFiles/ImGuiMarkdown.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vegeta/Desktop/ImGuiApp/Markdown/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ImGuiMarkdown.dir/src/imgui_draw.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImGuiMarkdown.dir/src/imgui_draw.cpp.o -MF CMakeFiles/ImGuiMarkdown.dir/src/imgui_draw.cpp.o.d -o CMakeFiles/ImGuiMarkdown.dir/src/imgui_draw.cpp.o -c /home/vegeta/Desktop/ImGuiApp/Markdown/src/imgui_draw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vegeta/Desktop/ImGui-MarkdownEditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ImGuiMarkdown.dir/src/imgui_draw.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImGuiMarkdown.dir/src/imgui_draw.cpp.o -MF CMakeFiles/ImGuiMarkdown.dir/src/imgui_draw.cpp.o.d -o CMakeFiles/ImGuiMarkdown.dir/src/imgui_draw.cpp.o -c /home/vegeta/Desktop/ImGui-MarkdownEditor/src/imgui_draw.cpp
 
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_draw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImGuiMarkdown.dir/src/imgui_draw.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vegeta/Desktop/ImGuiApp/Markdown/src/imgui_draw.cpp > CMakeFiles/ImGuiMarkdown.dir/src/imgui_draw.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vegeta/Desktop/ImGui-MarkdownEditor/src/imgui_draw.cpp > CMakeFiles/ImGuiMarkdown.dir/src/imgui_draw.cpp.i
 
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImGuiMarkdown.dir/src/imgui_draw.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vegeta/Desktop/ImGuiApp/Markdown/src/imgui_draw.cpp -o CMakeFiles/ImGuiMarkdown.dir/src/imgui_draw.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vegeta/Desktop/ImGui-MarkdownEditor/src/imgui_draw.cpp -o CMakeFiles/ImGuiMarkdown.dir/src/imgui_draw.cpp.s
 
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.o: CMakeFiles/ImGuiMarkdown.dir/flags.make
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.o: ../src/imgui_tables.cpp
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.o: CMakeFiles/ImGuiMarkdown.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vegeta/Desktop/ImGuiApp/Markdown/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.o -MF CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.o.d -o CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.o -c /home/vegeta/Desktop/ImGuiApp/Markdown/src/imgui_tables.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vegeta/Desktop/ImGui-MarkdownEditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.o -MF CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.o.d -o CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.o -c /home/vegeta/Desktop/ImGui-MarkdownEditor/src/imgui_tables.cpp
 
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vegeta/Desktop/ImGuiApp/Markdown/src/imgui_tables.cpp > CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vegeta/Desktop/ImGui-MarkdownEditor/src/imgui_tables.cpp > CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.i
 
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vegeta/Desktop/ImGuiApp/Markdown/src/imgui_tables.cpp -o CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vegeta/Desktop/ImGui-MarkdownEditor/src/imgui_tables.cpp -o CMakeFiles/ImGuiMarkdown.dir/src/imgui_tables.cpp.s
 
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_widgets.cpp.o: CMakeFiles/ImGuiMarkdown.dir/flags.make
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_widgets.cpp.o: ../src/imgui_widgets.cpp
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_widgets.cpp.o: CMakeFiles/ImGuiMarkdown.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vegeta/Desktop/ImGuiApp/Markdown/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ImGuiMarkdown.dir/src/imgui_widgets.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImGuiMarkdown.dir/src/imgui_widgets.cpp.o -MF CMakeFiles/ImGuiMarkdown.dir/src/imgui_widgets.cpp.o.d -o CMakeFiles/ImGuiMarkdown.dir/src/imgui_widgets.cpp.o -c /home/vegeta/Desktop/ImGuiApp/Markdown/src/imgui_widgets.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vegeta/Desktop/ImGui-MarkdownEditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ImGuiMarkdown.dir/src/imgui_widgets.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImGuiMarkdown.dir/src/imgui_widgets.cpp.o -MF CMakeFiles/ImGuiMarkdown.dir/src/imgui_widgets.cpp.o.d -o CMakeFiles/ImGuiMarkdown.dir/src/imgui_widgets.cpp.o -c /home/vegeta/Desktop/ImGui-MarkdownEditor/src/imgui_widgets.cpp
 
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_widgets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImGuiMarkdown.dir/src/imgui_widgets.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vegeta/Desktop/ImGuiApp/Markdown/src/imgui_widgets.cpp > CMakeFiles/ImGuiMarkdown.dir/src/imgui_widgets.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vegeta/Desktop/ImGui-MarkdownEditor/src/imgui_widgets.cpp > CMakeFiles/ImGuiMarkdown.dir/src/imgui_widgets.cpp.i
 
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImGuiMarkdown.dir/src/imgui_widgets.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vegeta/Desktop/ImGuiApp/Markdown/src/imgui_widgets.cpp -o CMakeFiles/ImGuiMarkdown.dir/src/imgui_widgets.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vegeta/Desktop/ImGui-MarkdownEditor/src/imgui_widgets.cpp -o CMakeFiles/ImGuiMarkdown.dir/src/imgui_widgets.cpp.s
 
 CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.o: CMakeFiles/ImGuiMarkdown.dir/flags.make
 CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.o: ../backends/imgui_impl_glfw.cpp
 CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.o: CMakeFiles/ImGuiMarkdown.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vegeta/Desktop/ImGuiApp/Markdown/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.o -MF CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.o.d -o CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.o -c /home/vegeta/Desktop/ImGuiApp/Markdown/backends/imgui_impl_glfw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vegeta/Desktop/ImGui-MarkdownEditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.o -MF CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.o.d -o CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.o -c /home/vegeta/Desktop/ImGui-MarkdownEditor/backends/imgui_impl_glfw.cpp
 
 CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vegeta/Desktop/ImGuiApp/Markdown/backends/imgui_impl_glfw.cpp > CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vegeta/Desktop/ImGui-MarkdownEditor/backends/imgui_impl_glfw.cpp > CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.i
 
 CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vegeta/Desktop/ImGuiApp/Markdown/backends/imgui_impl_glfw.cpp -o CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vegeta/Desktop/ImGui-MarkdownEditor/backends/imgui_impl_glfw.cpp -o CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.s
 
 CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/ImGuiMarkdown.dir/flags.make
 CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.o: ../backends/imgui_impl_opengl3.cpp
 CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/ImGuiMarkdown.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vegeta/Desktop/ImGuiApp/Markdown/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.o -c /home/vegeta/Desktop/ImGuiApp/Markdown/backends/imgui_impl_opengl3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vegeta/Desktop/ImGui-MarkdownEditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.o -c /home/vegeta/Desktop/ImGui-MarkdownEditor/backends/imgui_impl_opengl3.cpp
 
 CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vegeta/Desktop/ImGuiApp/Markdown/backends/imgui_impl_opengl3.cpp > CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vegeta/Desktop/ImGui-MarkdownEditor/backends/imgui_impl_opengl3.cpp > CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.i
 
 CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vegeta/Desktop/ImGuiApp/Markdown/backends/imgui_impl_opengl3.cpp -o CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vegeta/Desktop/ImGui-MarkdownEditor/backends/imgui_impl_opengl3.cpp -o CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.s
 
 # Object files for target ImGuiMarkdown
 ImGuiMarkdown_OBJECTS = \
@@ -221,7 +221,7 @@ ImGuiMarkdown: CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_glfw.cpp.o
 ImGuiMarkdown: CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.o
 ImGuiMarkdown: CMakeFiles/ImGuiMarkdown.dir/build.make
 ImGuiMarkdown: CMakeFiles/ImGuiMarkdown.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vegeta/Desktop/ImGuiApp/Markdown/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ImGuiMarkdown"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vegeta/Desktop/ImGui-MarkdownEditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ImGuiMarkdown"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ImGuiMarkdown.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -233,6 +233,6 @@ CMakeFiles/ImGuiMarkdown.dir/clean:
 .PHONY : CMakeFiles/ImGuiMarkdown.dir/clean
 
 CMakeFiles/ImGuiMarkdown.dir/depend:
-	cd /home/vegeta/Desktop/ImGuiApp/Markdown/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vegeta/Desktop/ImGuiApp/Markdown /home/vegeta/Desktop/ImGuiApp/Markdown /home/vegeta/Desktop/ImGuiApp/Markdown/build /home/vegeta/Desktop/ImGuiApp/Markdown/build /home/vegeta/Desktop/ImGuiApp/Markdown/build/CMakeFiles/ImGuiMarkdown.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vegeta/Desktop/ImGui-MarkdownEditor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vegeta/Desktop/ImGui-MarkdownEditor /home/vegeta/Desktop/ImGui-MarkdownEditor /home/vegeta/Desktop/ImGui-MarkdownEditor/build /home/vegeta/Desktop/ImGui-MarkdownEditor/build /home/vegeta/Desktop/ImGui-MarkdownEditor/build/CMakeFiles/ImGuiMarkdown.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ImGuiMarkdown.dir/depend
 

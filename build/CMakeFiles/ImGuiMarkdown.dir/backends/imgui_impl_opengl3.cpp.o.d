@@ -1,8 +1,8 @@
 CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.o: \
- /home/vegeta/Desktop/ImGuiApp/Markdown/backends/imgui_impl_opengl3.cpp \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/backends/imgui_impl_opengl3.cpp \
  /usr/include/stdc-predef.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/include/imgui.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/include/imconfig.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/include/imgui.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/include/imconfig.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/float.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
@@ -13,7 +13,7 @@ CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.o: \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/backends/imgui_impl_opengl3.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/backends/imgui_impl_opengl3.h \
  /usr/include/stdio.h /usr/include/bits/types.h \
  /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
  /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
@@ -25,7 +25,7 @@ CMakeFiles/ImGuiMarkdown.dir/backends/imgui_impl_opengl3.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/backends/imgui_impl_opengl3_loader.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/backends/imgui_impl_opengl3_loader.h \
  /usr/include/c++/11.2.0/stdlib.h /usr/include/c++/11.2.0/cstdlib \
  /usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/os_defines.h \

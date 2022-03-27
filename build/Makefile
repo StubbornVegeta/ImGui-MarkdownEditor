@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vegeta/Desktop/ImGuiApp/Markdown
+CMAKE_SOURCE_DIR = /home/vegeta/Desktop/ImGui-MarkdownEditor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vegeta/Desktop/ImGuiApp/Markdown/build
+CMAKE_BINARY_DIR = /home/vegeta/Desktop/ImGui-MarkdownEditor/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vegeta/Desktop/ImGuiApp/Markdown/build/CMakeFiles /home/vegeta/Desktop/ImGuiApp/Markdown/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vegeta/Desktop/ImGui-MarkdownEditor/build/CMakeFiles /home/vegeta/Desktop/ImGui-MarkdownEditor/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vegeta/Desktop/ImGuiApp/Markdown/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vegeta/Desktop/ImGui-MarkdownEditor/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

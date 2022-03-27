@@ -169,10 +169,11 @@ int main(int, char**)
         static bool p_open = true;
         ImGui::Begin("editor", &p_open);
 
+        static ImGuiInputTextFlags flags = ImGuiInputTextFlags_AllowTabInput;
         static ImVector<char> my_str;
         if (my_str.empty())
             my_str.push_back(0);
-        Funcs::MyInputTextMultiline("##MyStr", &my_str, ImVec2(-FLT_MIN, -ImGui::GetTextLineHeight()*FLT_MIN));
+        Funcs::MyInputTextMultiline("##MyStr", &my_str, ImVec2(-FLT_MIN, -ImGui::GetTextLineHeight()*FLT_MIN), flags);
         ImGui::End();
 
         ListNode* ImageList = Markdown(my_str.Data);

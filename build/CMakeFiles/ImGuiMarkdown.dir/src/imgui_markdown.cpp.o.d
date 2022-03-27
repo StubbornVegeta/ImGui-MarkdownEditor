@@ -1,8 +1,8 @@
 CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.o: \
- /home/vegeta/Desktop/ImGuiApp/Markdown/src/imgui_markdown.cpp \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/src/imgui_markdown.cpp \
  /usr/include/stdc-predef.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/include/imgui.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/include/imconfig.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/include/imgui.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/include/imconfig.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/float.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
@@ -13,7 +13,7 @@ CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.o: \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/include/imgui_markdown.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/include/imgui_markdown.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/types.h \
  /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
@@ -134,8 +134,8 @@ CMakeFiles/ImGuiMarkdown.dir/src/imgui_markdown.cpp.o: \
  /usr/include/c++/11.2.0/bits/basic_ios.tcc \
  /usr/include/c++/11.2.0/bits/ostream.tcc /usr/include/c++/11.2.0/istream \
  /usr/include/c++/11.2.0/bits/istream.tcc \
- /home/vegeta/Desktop/ImGuiApp/Markdown/backends/imgui_impl_glfw.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/backends/imgui_impl_opengl3.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/include/LoadImage.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/include/IconsFontAwesome5.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/backends/imgui_impl_opengl3_loader.h
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/backends/imgui_impl_glfw.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/backends/imgui_impl_opengl3.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/include/LoadImage.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/include/IconsFontAwesome5.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/backends/imgui_impl_opengl3_loader.h

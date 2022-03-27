@@ -1,8 +1,8 @@
 CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.o: \
- /home/vegeta/Desktop/ImGuiApp/Markdown/src/main.cpp \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/src/main.cpp \
  /usr/include/stdc-predef.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/include/imgui.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/include/imconfig.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/include/imgui.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/include/imconfig.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/float.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
@@ -13,8 +13,8 @@ CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.o: \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/backends/imgui_impl_glfw.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/backends/imgui_impl_opengl3.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/backends/imgui_impl_glfw.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/backends/imgui_impl_opengl3.h \
  /usr/include/c++/11.2.0/cstdlib \
  /usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -48,7 +48,7 @@ CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.o: \
  /usr/include/stdint.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-uintn.h /usr/include/GL/gl.h \
  /usr/include/GL/glext.h /usr/include/KHR/khrplatform.h \
- /home/vegeta/Desktop/ImGuiApp/Markdown/include/imgui_markdown.h \
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/include/imgui_markdown.h \
  /usr/include/c++/11.2.0/iostream /usr/include/c++/11.2.0/ostream \
  /usr/include/c++/11.2.0/ios /usr/include/c++/11.2.0/iosfwd \
  /usr/include/c++/11.2.0/bits/stringfwd.h \
@@ -137,4 +137,4 @@ CMakeFiles/ImGuiMarkdown.dir/src/main.cpp.o: \
  /usr/include/c++/11.2.0/bits/basic_ios.tcc \
  /usr/include/c++/11.2.0/bits/ostream.tcc /usr/include/c++/11.2.0/istream \
  /usr/include/c++/11.2.0/bits/istream.tcc \
- /home/vegeta/Desktop/ImGuiApp/Markdown/include/LoadImage.h
+ /home/vegeta/Desktop/ImGui-MarkdownEditor/include/LoadImage.h

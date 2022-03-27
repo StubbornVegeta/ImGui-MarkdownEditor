@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/vegeta/Desktop/ImGuiApp/Markdown/include -I/home/vegeta/Desktop/ImGuiApp/Markdown/backends
+CXX_INCLUDES = -I/home/vegeta/Desktop/ImGui-MarkdownEditor/include -I/home/vegeta/Desktop/ImGui-MarkdownEditor/backends
 
 CXX_FLAGS =  -std=c++17
 
