@@ -1,0 +1,3 @@
+/home/vegeta/Desktop/ImGuiApp/Markdown/build/CMakeFiles/ImGuiMarkdown.dir
+/home/vegeta/Desktop/ImGuiApp/Markdown/build/CMakeFiles/edit_cache.dir
+/home/vegeta/Desktop/ImGuiApp/Markdown/build/CMakeFiles/rebuild_cache.dir
