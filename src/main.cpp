@@ -178,6 +178,7 @@ int main(int, char**)
 
         ListNode* ImageList = Markdown(my_str.Data);
 
+
         /*************************** CUSTOM END *************************/
 
         // Rendering
@@ -195,8 +196,11 @@ int main(int, char**)
             ImageList = ImageList->next;
             delete tmp;
         }
-        glDeleteTextures(1, &(ImageList->value));
-        delete ImageList;
+        if (ImageList)
+        {
+            glDeleteTextures(1, &(ImageList->value));
+            delete ImageList;
+        }
 
         // Update and Render additional Platform Windows
         // (Platform functions may change the current OpenGL context, so we save/restore it to make it easier to paste this code elsewhere.

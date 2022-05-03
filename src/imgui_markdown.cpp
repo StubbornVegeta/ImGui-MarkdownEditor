@@ -9,6 +9,7 @@
 #include "Shellapi.h"
 #endif
 #include <string>
+#include <iostream>
 
 
 static ImFont* H1 = NULL;
